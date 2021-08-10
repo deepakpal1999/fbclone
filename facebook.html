@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <style>
+        *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+        }
+        .left-side{
+            display: flex;
+            margin-top:20px;
+            margin-left: 184px;
+            
+            
+            
+
+        }
+        header{
+            display: flex;
+            position:sticky;
+            top:0px;
+            left:0px;
+            width:100vw;
+            height:85px;
+            /* border:2px solid red; */
+            background-color:#29487d;
+        }
+        header .left-side h1{
+            font-weight:600;
+            font-size:40px;
+            color:white;
+        }
+        .btn{ 
+            margin-top:9px;
+            width:75px;
+            height:33px;
+            border-radius:3px;
+            background-color:#42b72a;
+            padding:4px 4px;
+            margin-left: 10px;
+            border: 2px solid #42b72a;
+            color:white;
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 1.5em;
+    
+        }
+        .right-side{
+            /* border:2px solid red; */
+            margin-left:340px;
+        }
+        .right-side form {
+            margin-top:14px;
+        }
+        .right-side label{
+            color:white;
+        }
+        .right-side form table a{
+            color: #9cb4d8;
+        }
+        .right-side form table{
+            border-spacing:4px;
+        
+            
+        }
+        .right-side form table input{
+            padding:2px 2px;
+        }
+        .btn1{
+            background-color:#3367ce;
+            padding:5px 4px;
+            margin-left: 4px;
+            border:1px solid grey;
+            border-radius: 3px;
+
+        }
+        .btn1:hover{
+            background-color:#29487d ;
+            /* border:2px solid #29487d; */
+            color:white;
+        }
+        .section{
+        background-color:#dde1e7;
+            width:100vw;
+            border: 2px solid rgb(226, 226, 226);
+            opacity:0.7;
+            
+            height:580px;
+        }
+        .section1{
+            width:400px;
+            margin:0 auto;
+            margin-top:50px;
+            border:1px solid lightgray;
+            background-color: white;
+            
+            
+            height:510px;
+        }
+        .first{
+           text-align: center;
+            
+            height:15%;
+            width:100%;
+            padding:7px 5px;
+            border-radius: 3px;
+        }
+        .first p{
+            color:#9cb4d8;
+            padding-top:2px;
+            font-size: 16px;
+            
+        }
+        .first h1{
+            font-size: 30px;
+        }
+        
+        .second{
+            width:399px;
+            height:10%;
+            display:flex;
+            justify-content:space-evenly;
+            align-items: center;
+            
+            margin:9px auto;
+            
+            /* border:2px solid red; */
+
+
+        }
+         .second input{
+            padding:11px;
+            border-radius: 5px;
+            font-size: 15px;
+            border:1px solid #d4d6da;
+            display:block;
+            width:170px;
+            border-radius: 3px;
+       
+            
+
+        } 
+        input:hover{
+            border:2px solid #d4d6da;
+        }
+        .input:active{
+            border:1px solid #d4d6da;
+        }
+        .input:visited{
+            border:1px solid #d4d6da;
+        }
+        .third{
+          
+            width:100%;
+            height:10%;
+            /* border:2px solid red; */
+            padding:0px 15px;
+            
+            
+        }
+        .third input{
+            display:block;
+            width:100%;
+            padding:11px;
+            border:1px solid #d4d6da;
+            border-radius: 3px;
+        }
+        .fourth{
+          
+          width:100%;
+          height:10%;
+          /* border:2px solid red; */
+          padding:0px 15px;
+          
+          
+          
+      }
+      .fourth input{
+          display:block;
+          width:100%;
+          padding:11px;
+          border:1px solid #d4d6da;
+          border-radius: 3px;
+      }
+      .fifth{
+          height:12%;
+          width:100%;
+          /* border:2px solid red; */
+      }
+      .fifth .fifth1{
+          width:100%;
+          height:90%;
+          margin-left:5px;
+
+
+
+      }
+      .fifth p{
+          margin-left:15px;
+          font-size: 13px;
+          margin-bottom:4px;
+      }
+      .fifth1 select{
+          padding:10px;
+          padding-right:58px;
+          margin:0px 10px;
+          border:1px solid #d4d6da;
+          border-radius: 3px;
+      }
+      .sixth{
+          width:100%;
+          height:14%;
+          /* border:2px solid red; */
+
+      }
+      .sixth .sixth1{
+          display: flex;
+      }
+      .sixth .sixth1 .sixth2{
+        border:1px solid #d4d6da;
+        width:27%;
+        height:38px;
+        margin:0px 12px;
+        border-radius: 3px;
+        padding:10px 15px;
+      }
+      .sixth .sixth1 .sixth2 label{
+          font-size: 16px;
+      }
+      .sixth p{
+          margin-bottom: 5px;
+          margin-left:12px;
+
+      }
+      .seventh{
+          /* border:2px solid red; */
+          width:100%;
+          height:25%;
+
+      }
+      .seventh p{
+          margin:5px;
+
+      }
+      .btn3{
+        
+    background: none;
+    background-color: #00a400;
+    border: none;
+    border-radius: 6px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 36px;
+    overflow: hidden;
+    padding: 0 32px;
+    text-shadow: none;
+    margin:6px 110px;
+
+
+
+
+
+
+      }
+        
+        
+      
+        
+
+
+
+        
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-side">
+            
+            <h1>facebook</h1>
+            <button class="btn">sign up</button>
+        </div>
+        <div class="right-side">
+            <form>
+                <table>
+                    <thead>
+                        <tr>
+                            <td><label for="email">Email or phone</label></td>
+                            <td><label for="password">password</label></td>
+                        </tr>
+                        <tbody>
+                            <tr>
+                            <td><input type="email" id="email"></td>
+                            <td><input type="password" id="password"></td>
+                            <td><input type="submit" value="submit" class="btn1"></td>
+                            </tr>
+                            
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td><input type="hidden"></td>
+                                <td><a href="#">forget password?</a></td>
+                            </tr>
+                        </tfoot>
+                        
+
+                    </thead>
+                </table>
+            </form>
+
+        </div>
+
+
+    </header>
+    <div class="section">
+        <div class="section1">
+            <div class="first">
+                <h1>create a new account</h1>
+                <p>it's quick and easy</p>
+                
+            </div>
+            <hr>
+            
+                <div class="second">
+                    <input type="text" placeholder=" First name">
+                    <input type="text" placeholder="surname">
+                </div>
+                <div class="third">
+                    <input type="email" placeholder="Email or phone no">
+                  </div>
+                  <div class="fourth">
+                      <input type="password" placeholder="password">
+                  </div>
+                  <div class="fifth">
+                    <p>Date of birth</p>
+                    <div class="fifth1">
+                    <select>
+                        <option>12</option>
+                        <option>12</option>
+                     </select>
+                     <select>
+                        <option>12</option>
+                        <option>12</option>
+                     </select>
+                     <select>
+                        <option>12</option>
+                        <option>12</option>
+                     </select>
+                  </div>
+                  </div>
+                  <div class="sixth">
+                      <p>Gender</p>
+                      <div class="sixth1">
+                          <div class="sixth2">
+                          <label for="d">male</label>
+                          <input type="radio" name="gender" id="d">
+                          </div>
+                        <div class="sixth2">
+                          <label for="de">female</label>
+                          <input type="radio" name="gender">
+                          </div>
+                          <div class="sixth2">
+                          <label for="dee">others</label>
+                          <input type="radio" name="gender">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="seventh">
+                      <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.
+
+                    </p>
+                    <button class="btn3">submit</button>
+
+                  </div>
+                 
+             
+               
+        
+
+                </div>
+    </div>
+
+        <footer>
+        
+    </footer>
+    
+    
+</body>
+</html>
